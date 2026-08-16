@@ -171,7 +171,11 @@ a{
             margin-right: 5%;
             margin-left: 5%; 
             height: 410px;
-            flex-direction: column-reverse;
+            flex-direction: column;
+    }
+
+    .day2{
+         flex-direction: column-reverse;
     }
 
     .box{
