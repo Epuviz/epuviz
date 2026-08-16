@@ -14,7 +14,7 @@ body{
 #title{
     position: sticky;
     top: 0;
-    background-color: #d3621c;
+    background-color: #000000;
     background-image: url(immagini/icona.png);
     background-repeat: no-repeat;
     text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
@@ -170,7 +170,7 @@ a{
     .day{
             margin-right: 5%;
             margin-left: 5%; 
-            height: 370px;
+            height: 390px;
             flex-direction: column-reverse;
     }
 
