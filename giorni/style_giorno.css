@@ -52,8 +52,7 @@ main{
       position: relative;
   text-align: left;
     /*box-shadow: 15px 11px 12px -4px rgba(0, 0, 0, 0.123);*/
-
-
+ 
 
 }
 
@@ -63,14 +62,10 @@ img{
 #first{
     float: right;
     height:10em;
+
     
 }
 
-#first{
-    content: "";
-    clear: both;
-  display: table;
-}
 
 
 
@@ -96,7 +91,21 @@ img{
         display: block; /* Gli elementi mobile-only diventano visibili */
     }
 
+    main{
+           display: flex;
+    flex-direction: column;
+
+    }
     #title{
         text-align: center;
+    }
+
+    img{
+        margin: 0px;
+    }
+
+    #first{
+        object-fit: cover;
+        justify-content: center;
     }
 }
