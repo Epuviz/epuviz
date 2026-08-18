@@ -1,0 +1,68 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+
+    height: 90vh;
+    flex-wrap: wrap;
+    align-content: start;
+    row-gap: 1em;
+    padding:1em;
+}
+
+.box{
+    width: 49%;
+  
+    background-color: #3f6b4f;
+    font-size: 1em;
+ 
+    border-radius: 15px;
+    color: azure;
+    padding: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .desktop-only,
+ .mobile-only {
+     display: none;
+ }
+
+ /* Media query per dispositivi con schermi più larghi di 768px (desktop/tablet) */
+ @media (min-width: 768px) {
+     .desktop-only {
+         display: inline-block;
+     }
+
+
+ }
+
+ /* Media query per dispositivi con schermi più piccoli di 768px (mobile) */
+ @media (max-width: 767px) {
+     .mobile-only {
+         display: block;
+         /* Gli elementi mobile-only diventano visibili */
+     }
+
+     #title {
+         position: relative;
+         text-align: center;
+     }
+
+  .box{
+    width: 100%;
+  }
+
+
+
+ }
