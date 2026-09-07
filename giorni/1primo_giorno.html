@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viaggio in Irlanda</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../base.css">
 
     <link rel="stylesheet" href="days.css">
+    <link rel="stylesheet" href="p.css">
 
     <link rel="icon" type="image/x-icon" href="../immagini/icona.png">
 </head>
 
 <body>
 
-    <header id="title">
+    <header id="title" style="z-index: 9;">
         <div class="sub-head-box">
             <h1><a href="../index.html">Viaggio in Irlanda
                     <span class="desktop-only"> - Organizzazione viaggio</span></a>
@@ -31,82 +38,110 @@
         </div>
     </header>
 
-    <main>
+    <div class="row container-fluid d-flex justify-content-center m-2">
         <!--COLONNA 1-->
-        <div class="colonna">
+        <div class="col-xl-3">
 
-            <div class="item" id="item1">
-                <p>
-                    <b>Dublino</b>, capitale della Repubblica d'Irlanda, si trova sulla costa orientale dell'Irlanda,
-                    alla foce
-                    del <b>fiume Liffey</b>. I suoi edifici storici più importanti sono il <b>castello di Dublino,</b>
-                    risalente al
-                    XIII secolo, e l’imponente <b>Cattedrale di San Patrizio</b>, fondata nel 1191. I parchi della città
-                    comprendono il paesaggistico St. Stephens Green e l’enorme <b>Phoenix Park</b>, all’interno del
-                    quale si
-                    trova lo <b>Zoo di Dublino</b>. Il <b>Museo nazionale d'Irlanda</b> documenta il patrimonio
-                    culturale irlandese.
-                </p>
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">
+                        <b>Dublino</b>, capitale della Repubblica d'Irlanda, si trova sulla costa orientale
+                        dell'Irlanda,
+                        alla foce
+                        del <b>fiume Liffey</b>. I suoi edifici storici più importanti sono il <b>castello di
+                            Dublino,</b>
+                        risalente al
+                        XIII secolo, e l’imponente <b>Cattedrale di San Patrizio</b>, fondata nel 1191. I parchi della
+                        città
+                        comprendono il paesaggistico St. Stephens Green e l’enorme <b>Phoenix Park</b>, all’interno del
+                        quale si
+                        trova lo <b>Zoo di Dublino</b>. Il <b>Museo nazionale d'Irlanda</b> documenta il patrimonio
+                        culturale irlandese.
+                    </p>
+                </div>
             </div>
 
-            <div class="item" id="item2">
+            <div class="card " >
 
 
-                <img src="../immagini_giorno1/castillo-dublin.jpg">
-                <b style="font-size: 2rem;"><a href="https://it.wikipedia.org/wiki/Castello_di_Dublino">CASTELLO DI DUBLINO</a></b>
-                <b style="font-size: 1.5rem; color: rgb(255, 136, 136);">CHIUSO!</b>
-               
-                <p>
-                    Il <b>Castello di Dublino</b>
-                    (Dublin Castle) è il cuore della Dublino storica ed è uno degli edifici più importanti della storia
-                    irlandese.
-                    La città prende il nome dal Black Pool, Dubh Linn, che si trovava sul sito dell’attuale giardino del
-                    castello, dove il fiume Liffey incontrava il fiume Poddle.
-                    Si presume che la fortificazione originale sia stata un antico forte ad anello gaelico, seguito da
-                    una fortezza vichinga. Dal 1204 al 1922 fu sede del dominio inglese e poi britannico in Irlanda.
-                    Infatti la fortezza normanna, voluta da Giovanni Senza Terra, è stata per molto tempo il simbolo
-                    dell’oppressione inglese. Con le sue quattro torri d’angolo, i bastioni e i fossati, ha sofferto
-                    numerosi attacchi, tra cui quello di Silken Thomas Fitzgerald, suddito ribelle della Corona. Non
-                    pensate però al classico castello medievale: venne ideato più come residenza che come maniero.
-                    Infatti dopo che un incendio, nel 1684, distrusse gran parte del Castello Medievale, i magnifici
-                    Appartamenti di Stato furono costruiti come quartieri residenziali della corte vicereale. Ora sono
-                    la sede di inaugurazioni presidenziali, visite ufficiali di stato, funzioni statali, mostre e altri
-                    eventi.
-                </p>
+                <img src="../immagini_giorno1/castillo-dublin.jpg" class="card-img-top">
+                <div class="card-body ">
+                    <h4 style="font-weight: bold;"><a href="https://it.wikipedia.org/wiki/Castello_di_Dublino"
+                            class="card-title d-flex justify-content-center">CASTELLO DI DUBLINO</a></h4>
+                
+                    <h5 class="card-title d-flex justify-content-center" style="font-size: 1.5rem; color: rgb(255, 136, 136); font-weight: bold;">CHIUSO!</h5>
 
+                    <p class="card-text">
+                        Il <b>Castello di Dublino</b>
+                        (Dublin Castle) è il cuore della Dublino storica ed è uno degli edifici più importanti della
+                        storia
+                        irlandese.
+                        La città prende il nome dal Black Pool, Dubh Linn, che si trovava sul sito dell’attuale giardino
+                        del
+                        castello, dove il fiume Liffey incontrava il fiume Poddle.
+                        Si presume che la fortificazione originale sia stata un antico forte ad anello gaelico, seguito
+                        da
+                        una fortezza vichinga. Dal 1204 al 1922 fu sede del dominio inglese e poi britannico in Irlanda.
+                        Infatti la fortezza normanna, voluta da Giovanni Senza Terra, è stata per molto tempo il simbolo
+                        dell’oppressione inglese. Con le sue quattro torri d’angolo, i bastioni e i fossati, ha sofferto
+                        numerosi attacchi, tra cui quello di Silken Thomas Fitzgerald, suddito ribelle della Corona. Non
+                        pensate però al classico castello medievale: venne ideato più come residenza che come maniero.
+                        Infatti dopo che un incendio, nel 1684, distrusse gran parte del Castello Medievale, i magnifici
+                        Appartamenti di Stato furono costruiti come quartieri residenziali della corte vicereale. Ora
+                        sono
+                        la sede di inaugurazioni presidenziali, visite ufficiali di stato, funzioni statali, mostre e
+                        altri
+                        eventi.
+                    </p>
 
+                </div>
             </div>
         </div>
 
         <!--COLONNA 2-->
-        <div class="colonna" id="colonna2">
+        <div class="col-xl-3" id="colonna2">
             <!--POST 1-->
-            <div class="item" id="item3">
-                <img src="../immagini_giorno1/tourist_map.jpg">
+            <div class=" card" >
+                <img class="card-img-top" src="../immagini_giorno1/tourist_map.jpg">
             </div>
+
+
             <!--POST 2-->
-             <div class="item" id="item5">
-                <img src="../immagini_giorno1/trinity-college.jpg">
-                <b style="font-size: 2rem;"><a href="https://en.wikipedia.org/wiki/Trinity_College_Dublin"></a>TRINITY COLLEGE</b>
-                <p>
-                    Il Trinity College di Dublino è la più antica università d’Irlanda, fondata dalla regina Elisabetta I nel 1592: venne istituita con carta reale e modellata nello stile delle università di Oxford e Cambridge. 
-                    Originariamente situato a una certa distanza a est della città fortificata, sul sito dell’ex Priorato di All Hallows, 
-                    il Trinity College si trova ora nel cuore di Dublino, di fronte allo storico Parlamento. 
-                    L’ingresso principale del College Green vanta un magnifico arco frontale e un portale in legno. 
-                    La piazza acciottolata si aprirà davanti a voi con il Campanile al centro, fiancheggiato da edifici in pietra con portali ad arco e colonne doriche. Tra questi c’è l’Old Library Building, che ospita il Book of Kells, 
-                    uno dei più grandi tesori culturali d’Irlanda. Potrete ammirare il famoso manoscritto medievale, realizzato a mano oltre 1.000 anni fa, rimarrete incantati dai colori squisiti e dalle intricate decorazioni del libro. 
-                    Infine visiterete la magnifica Long Room, un’incredibile biblioteca che ospita 250.000 libri e documenti storici, tra i più antichi d’Irlanda.
+            <div class="card" >
+                <img class="card-img-top" src="../immagini_giorno1/trinity-college.jpg">
+
+                <div class="card-body">
+                <h3 style="font-weight: bold;" class="card-title"><a href="https://en.wikipedia.org/wiki/Trinity_College_Dublin"></a>TRINITY
+                    COLLEGE</h3>
+                <p class="card-text">
+                    Il Trinity College di Dublino è la più antica università d’Irlanda, fondata dalla regina Elisabetta
+                    I nel 1592: venne istituita con carta reale e modellata nello stile delle università di Oxford e
+                    Cambridge.
+                    Originariamente situato a una certa distanza a est della città fortificata, sul sito dell’ex
+                    Priorato di All Hallows,
+                    il Trinity College si trova ora nel cuore di Dublino, di fronte allo storico Parlamento.
+                    L’ingresso principale del College Green vanta un magnifico arco frontale e un portale in legno.
+                    La piazza acciottolata si aprirà davanti a voi con il Campanile al centro, fiancheggiato da edifici
+                    in pietra con portali ad arco e colonne doriche. Tra questi c’è l’Old Library Building, che ospita
+                    il Book of Kells,
+                    uno dei più grandi tesori culturali d’Irlanda. Potrete ammirare il famoso manoscritto medievale,
+                    realizzato a mano oltre 1.000 anni fa, rimarrete incantati dai colori squisiti e dalle intricate
+                    decorazioni del libro.
+                    Infine visiterete la magnifica Long Room, un’incredibile biblioteca che ospita 250.000 libri e
+                    documenti storici, tra i più antichi d’Irlanda.
                 </p>
+                </div>
             </div>
         </div>
         <!--COLONNA 3-->
-        <div class="colonna" id="colonna3">
-            <div class="item" id="item4">
-                 
-                  <b style="font-size: 2rem;"><a href="https://it.wikipedia.org/wiki/Phoenix_Park">PHOENIX PARK</a></b><br>
-                <b style="font-size: 0.9rem; color: rgb(235, 136, 255);">ATTRAZIONE FRIGNOTTA!</b>
-                
-                <p>
+        <div class="col-xl-3" id="colonna3">
+            <div class="card" id="item4">
+                <div class="card-body">
+                <h3 style="font-weight: bold;" class="card-title d-flex justify-content-center"><a href="https://it.wikipedia.org/wiki/Phoenix_Park">PHOENIX
+                        PARK</a></h3>
+                <h5 class="card-title d-flex justify-content-center" style="font-weight: bold; color: rgb(235, 136, 255);">ATTRAZIONE FRIGNOTTA!</h5>
+
+                <p class="card-text">
                     Il Phoenix Park (irlandese: Páirc an Fhionn-Uisce, "Parco dell'Acqua Limpida"), è un parco cittadino
                     situato a 3 km a nord-ovest del centro di Dublino,
                     capitale della Repubblica d'Irlanda. Ricco di prati e viali alberati, esteso 712 ettari, è
@@ -115,11 +150,14 @@
                     più esteso sia del Central Park di New York che dell'Hyde Park di Londra.
                     Il Richmond Park di Londra supera il Phoenix Park di soli 2 km².
                 </p>
-                <img src="../immagini_giorno1/phoenix_park.jpg">
+
+                </div>
+                <img class="card-img-top" src="../immagini_giorno1/phoenix_park.jpg">
+            </div>
+
         </div>
-           
-        </div>
-        <!--COLONNA 4 ->
+    </div>
+    <!--COLONNA 4 ->
 
 
 
