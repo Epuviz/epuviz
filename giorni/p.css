@@ -1,0 +1,12 @@
+
+header {
+   position: sticky;
+   
+}
+
+.card{
+    background-color: #3f6b4f ;
+    color: azure;
+    padding: 0.5rem;
+}
+
