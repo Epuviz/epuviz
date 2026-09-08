@@ -1,7 +1,7 @@
 
 header {
    position: sticky;
-   
+    margin: 0px !important; padding:0px !important; width : 100% !important; 
 }
 
 .card{
@@ -10,4 +10,8 @@ header {
     margin-bottom: 1rem;
     
 }
+
+
+
+
 
